@@ -8,18 +8,18 @@
 
 **proposalType：**SecretaryGeneral CRCProposalType = 0x0400
 
-| Field                     | Type    | Usage                        |
-| ------------------------- | ------- | ---------------------------- |
-| ProposalType              | Uint16  | 提案类型                     |
-| CategoryData              | String  | 类别数据                     |
-| OwnerPublicKey            | []byte  | 提案所有者，也就是提案负责人 |
-| DraftHash                 | Uint256 | 提案原文hash                 |
-| SecretaryGeneralPublicKey | []byte  | 新秘书长公钥                 |
-| SecretaryGeneralDID       | Uint168 | 新秘书长DID                  |
-| Signature                 | []byte  | 提案发起者签名               |
-| SecretaryGeneraSignature  | []byte  | 新秘书长签名                 |
-| CRCouncilMemberDID        | Uint168 | 推荐人的DID                  |
-| CRCouncilMemberSignature  | []byte  | 推荐人签名                   |
+| Field                     | Type    | Usage                                                    |
+| ------------------------- | ------- | -------------------------------------------------------- |
+| ProposalType              | Uint16  | 提案类型                                                 |
+| CategoryData              | String  | 类别数据                                                 |
+| OwnerPublicKey            | []byte  | 提案所有者，也就是提案负责人                             |
+| DraftHash                 | Uint256 | 提案原文hash                                             |
+| SecretaryGeneralPublicKey | []byte  | 新秘书长公钥                                             |
+| SecretaryGeneralDID       | Uint168 | 新秘书长DID                                              |
+| Signature                 | []byte  | 提案发起者签名                                           |
+| SecretaryGeneraSignature  | []byte  | 新秘书长签名(注意：新秘书长签名内容不包括提案发起人签名) |
+| CRCouncilMemberDID        | Uint168 | 推荐人的DID                                              |
+| CRCouncilMemberSignature  | []byte  | 推荐人签名                                               |
 
 
 
@@ -29,18 +29,19 @@
 
 **proposalType：**ChangeProposalOwner CRCProposalType = 0x0401
 
-| Field                    | Type    | Usage                          |
-| ------------------------ | ------- | ------------------------------ |
-| ProposalType             | Uint16  | 提案类型                       |
-| CategoryData             | String  | 类别数据                       |
-| OwnerPublicKey           | []byte  | 提案所有者，也就是提案负责人   |
-| DraftHash                | Uint256 | 提案原文hash                   |
-| TargetProposalHash       | Uint256 | 需要修改提案负责人的提案的hash |
-| NewRecipient             | Uint168 | 新ELA接受地址                  |
-| NewOwnerPublicKey        | []byte  | 新提案负责人公钥               |
-| Signature                | []byte  | 提案发起者签名                 |
-| CRCouncilMemberDID       | Uint168 | 推荐人的DID                    |
-| CRCouncilMemberSignature | []byte  | 推荐人签名                     |
+| Field                    | Type    | Usage                                                  |
+| ------------------------ | ------- | ------------------------------------------------------ |
+| ProposalType             | Uint16  | 提案类型                                               |
+| CategoryData             | String  | 类别数据                                               |
+| OwnerPublicKey           | []byte  | 提案所有者，也就是提案负责人                           |
+| DraftHash                | Uint256 | 提案原文hash                                           |
+| TargetProposalHash       | Uint256 | 需要修改提案负责人的提案的hash                         |
+| NewRecipient             | Uint168 | 新ELA接受地址                                          |
+| NewOwnerPublicKey        | []byte  | 新提案负责人公钥                                       |
+| Signature                | []byte  | 提案发起者签名                                         |
+| NewOwnerSignature        | []byte  | 新提案负责人签名(注意：签名内容不包括提案发起人的签名) |
+| CRCouncilMemberDID       | Uint168 | 推荐人的DID                                            |
+| CRCouncilMemberSignature | []byte  | 推荐人签名                                             |
 
 
 
