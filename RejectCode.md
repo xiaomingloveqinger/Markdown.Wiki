@@ -72,3 +72,4 @@
 | 49   | ErrTxPoolTypeCastFailure      | -71006 | 交易池类型转换失败               |         |          |
 | 50   | ErrTxPoolTxDuplicate          | -71007 | 交易池交易重复                   |         |          |
 
+
