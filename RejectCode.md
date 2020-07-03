@@ -52,7 +52,7 @@
 | 28   | ErrTxSidechainPowConsensus    | -23002 | 侧链挖矿交易发起人不正确         |         |          |
 | 29   | ErrDPoSFailure                | -30000 | DPOS相关错误                     |         |          |
 | 30   | ErrCRFailure                  | -40000 | CR相关错误                       |         |          |
-| 31   | ErrDbFailure                  | -50000 | 数据库相关错误                   |         |          |
+| 31   | ErrDbFailure                  | -50000 | 数据库相关错误                   | 否       | 2020.7.3 |
 | 32   | ErrP2pFailure                 | -60000 | P2P相关错误                      |         |          |
 | 33   | ErrP2pReject                  | -61000 | 被P2P拒绝错误                    |         |          |
 | 34   | ErrP2pRejectMalformed         | -61001 | 非网络引起的消息读取失败错误     |         |          |
