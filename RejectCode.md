@@ -8,7 +8,7 @@
 | 2    | RejectInvalid         | 0x10 | 交易检查不通过                             | 是      | 2020.7.3 |
 | 3    | RejectObsolete        | 0x11 | 被协议拒绝的交易                           | 是      | 2020.7.3 |
 | 4    | RejectDuplicate       | 0x12 | 重复交易                                   | 是      | 2020.7.3 |
-| 5    | RejectNonstandard     | 0x40 | 非标准交易                                 | 是        | 2020.7.3      |
+| 5    | RejectNonstandard     | 0x40 | 非标准消息                                 | 否        | 2020.7.3      |
 | 6    | RejectDust            | 0x41 | 灰尘账户交易                               | 否      | 2020.7.3 |
 | 7    | RejectInsufficientFee | 0x42 | 交易手续费检查不通过                       | 是        | 2020.7.3    |
 | 8    | RejectCheckpoint      | 0x43 | 交易在当前高度不支持                       | 是        | 2020.7.3       |
