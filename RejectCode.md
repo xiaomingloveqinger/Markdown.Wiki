@@ -45,7 +45,7 @@
 | 22   | ErrTxReturnDeposit            | -22014 | 取回质押金交易验证不通过         |         |          |
 | 23   | ErrTxAppropriation            | -22015 | CR换届拨款交易验证不通过         |         |          |
 | 24   | ErrTxAssetsRectify            | -22016 | CR总地址零钱换整交易验证不通过   |         |          |
-| 25   | ErrTxRealWithdraw             | -2201  | 链上自动创建的提币交易验证不通过 |         |          |
+| 25   | ErrTxRealWithdraw             | -22017 | 链上自动创建的提币交易验证不通过 |         |          |
 | 26   | ErrTxSidechainValidation      | -23000 | 侧链挖矿交易验证不通过           |         |          |
 | 27   | ErrTxSidechainDuplicate       | -23001 | 侧链挖矿交易重复                 |         |          |
 | 28   | ErrTxSidechainPowConsensus    | -23002 | 侧链挖矿交易发起人不正确         |         |          |
