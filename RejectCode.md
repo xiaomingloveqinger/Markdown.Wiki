@@ -67,7 +67,7 @@
 | 44   | ErrTxPoolOverCapacity         | -71001 | 交易池超过最大限定值             |
 | 45   | ErrTxPoolSidechainTxDuplicate | -71002 | 交易池里存在相同的侧链挖矿交易   |
 | 46   | ErrTxPoolDPoSTxDuplicate      | -71003 | 交易池DPOS相关交易重复           |
-| 47   | ErrTxPoolCRTxDuplicate        | -71004 | 交易池CR相关脚印重复             |
+| 47   | ErrTxPoolCRTxDuplicate        | -71004 | 交易池CR相关交易重复             |
 | 48   | ErrTxPoolDoubleSpend          | -71005 | 交易池双花检查不通过             |
 | 49   | ErrTxPoolTypeCastFailure      | -71006 | 交易池类型转换失败               |
 | 50   | ErrTxPoolTxDuplicate          | -71007 | 交易池交易重复                   |
