@@ -10,7 +10,7 @@
 | 4    | RejectDuplicate       | 0x12 | 重复交易                                   |
 | 5    | RejectNonstandard     | 0x40 | 非标准交易                                 |
 | 6    | RejectDust            | 0x41 | 灰尘账户交易                               |
-| 7    | RejectInsufficientFee | 0x42 | 交易fee检查不通过                          |
+| 7    | RejectInsufficientFee | 0x42 | 交易手续费检查不通过                       |
 | 8    | RejectCheckpoint      | 0x43 | 交易在当前高度不支持                       |
 
 
@@ -28,7 +28,7 @@
 | 5    | ErrBlockIneffectiveCoinbase   | -12001 | 区块中的Coinbase交易无效         |
 | 6    | ErrTxFailure                  | -20000 | 交易创建失败                     |
 | 7    | ErrTxSerializeDeserialize     | -21000 | 交易序列化反序列化错误           |
-| 8    | ErrTxValidation               | -22000 | aa                               |
+| 8    | ErrTxValidation               | -22000 | 交易合法性检查不通过             |
 | 9    | ErrTxInvalidInput             | -22001 | 交易input验证不通过              |
 | 10   | ErrTxInvalidOutput            | -22002 | 交易output验证不通过             |
 | 11   | ErrTxBalance                  | -22003 | 交易余额验证不通过               |
