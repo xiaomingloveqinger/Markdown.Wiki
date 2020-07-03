@@ -6,13 +6,13 @@
 | 序号 | 字段名                | 值   | 意义                                       | SPV使用 | 日期     |
 | ---- | --------------------- | ---- | ------------------------------------------ | ------- | -------- |
 | 1    | RejectMalformed       | 0x01 | 消息格式不正确                             | 是      | 2020.7.3 |
-| 2    | RejectInvalid         | 0x10 | 交易检查不通过                             | 是      | 2020.7.3 |
-| 3    | RejectObsolete        | 0x11 | 被协议拒绝的交易                           | 否      | 2020.7.3 |
+| 2    | RejectInvalid         | 0x10 | 交易⾮法                         | 是      | 2020.7.3 |
+| 3    | RejectObsolete        | 0x11 | 被协议拒绝的交易，协议版本太低                    | 否      | 2020.7.3 |
 | 4    | RejectDuplicate       | 0x12 | 重复交易                                   | 是      | 2020.7.3 |
 | 5    | RejectNonstandard     | 0x40 | 非标准消息                                 | 否        | 2020.7.3      |
 | 6    | RejectDust            | 0x41 | 灰尘账户交易                               | 否      | 2020.7.3 |
 | 7    | RejectInsufficientFee | 0x42 | 交易手续费检查不通过                       | 是        | 2020.7.3    |
-| 8    | RejectCheckpoint      | 0x43 | 交易在当前高度不支持                       | 是        | 2020.7.3       |
+| 8    | RejectCheckpoint      | 0x43 | 区块跟Checkpoint冲突，分叉checkpoint | 是        | 2020.7.3       |
 
 
 
